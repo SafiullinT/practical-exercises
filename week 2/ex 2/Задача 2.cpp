@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <locale>
 #include "circle.h"
-usung namespace std;
+using namespace std;
 
 int main()
 {
