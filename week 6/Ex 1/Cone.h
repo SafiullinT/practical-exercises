@@ -1,22 +1,22 @@
 #pragma once
 class Cone {
-	double x, y, z; // координаты центра основания
-	double radius; // радиус основания
-	double height; // высота
+	double x, y, z; 
+	double radius; 
+	double height; 
 public:
-	// Конструкторы
-	Cone(); // конструктор по умолчанию
-	Cone(double r, double h); // конструктор с центром в начале координат
-	Cone(double x, double y, double z, double r, double h); // произвольный конус
-	// Функции доступа
+	
+	Cone(); 
+	Cone(double r, double h); 
+	Cone(double x, double y, double z, double r, double h); 
+	
 	void setCoordinate(double x, double y, double z);
 	void setRadius(double r);
 	void setHeight(double h);
 	double getRadius();
 	double getHeight();
-	// Площадь полной поверхности
+	
 	double area();
-	// Объем
+	
 	double volume();
 	void print();
 };
