@@ -7,19 +7,19 @@ using namespace std;
 
 const double pi = 3.14159265;
 
-// Конструктор по умолчанию
+
 Cone::Cone() {
 	x = y = z = radius = height = 0;
 }
 
-// Конструктор с центром в начале координат
+
 Cone::Cone(double r, double h) {
 	x = y = z = 0.0;
 	radius = r;
 	height = h;
 }
 
-// Конструктор для Cone
+
 Cone::Cone(double a, double b, double c, double r, double h) {
 	x = a;
 	y = b;
@@ -28,7 +28,7 @@ Cone::Cone(double a, double b, double c, double r, double h) {
 	height = h;
 }
 
-// Функции доступа
+
 void Cone::setCoordinate(double a, double b, double c) {
 	x = a;
 	y = b;
@@ -51,18 +51,18 @@ double Cone::getHeight() {
 	return height;
 }
 
-// Площадь полной поверхности
+
 double Cone::area() {
 	double l = sqrt(height * height + radius * radius);
 	return pi * radius * (radius + l);
 }
 
-// Объем
+
 double Cone::volume() {
 	return pi * radius * radius * height / 3;
 }
 
-// Вывод
+
 void Cone::print() {
 	cout << "Координаты центра основания: " << x << " " << y << " " << z << endl;
 	cout << "Радиус основания: " << radius << endl;
